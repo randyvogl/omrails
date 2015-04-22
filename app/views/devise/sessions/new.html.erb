@@ -9,10 +9,10 @@
     <%= f.input :password, autocomplete: "off", wrapper_html: {id:'password'} %>
 
   <% if devise_mapping.rememberable? -%>
-      <%= f.input :remember_me, as: :boolean,wrapper_html: {class:'options'} %>
+      <%= f.input :remember_me, as: :boolean %>
   <% end -%>
 
-  <div class="actions">
+  <div class="form-actions col-sm-offset-3">
     <!--<%= f.submit 'Log in' %> -->
     <%= f.button :submit, "Log In" %>
   </div>
